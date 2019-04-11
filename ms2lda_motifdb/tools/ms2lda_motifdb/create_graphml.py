@@ -39,7 +39,11 @@ motif_network['nodes']['motifdb_annotation'] = motif_network['nodes']['motifdb_a
 
 MG = make_motif_graphml(motif_network['nodes'],motif_network['edges'])
 output_graphml_filename = os.path.join(args.output_folder, "ms2lda_network.graphml")
-nx.write_graphml(MG, output_graphml_filename, infer_numeric_types = True)
+
+try:
+    nx.write_graphml(MG, output_graphml_filename, infer_numeric_types = True)
+except:
+    open(output_graphml_filename, "w").write("Error Exporting GraphML")
 
 # edges = pd.read_csv(os.path.join(input_folder, "output_ms2lda_edges.tsv"), sep = '\t')
 # edges["shared_motifs"] = edges["SharedMotifs"]
