@@ -208,7 +208,7 @@
                         <column label="USI" type="genericurlgenerator" width="3" field="cluster index"> \
                             <parameter name="URLBASE" value="http://dorresteinappshub.ucsd.edu:5011/spectrum/"/>\
                             <parameter name="REQUESTPARAMETER=usi" value="mzspec:GNPSTASK-{task}:spectra/specs_ms.mgf:scan:[cluster index]"/>
-                            <parameter name="LABEL" value="USI Page"/>
+                            <parameter name="LABEL" value="mzspec:GNPSTASK-{task}:spectra/specs_ms.mgf:scan:[cluster index]"/>
                         </column>
                 </row>
                 <row expander="image">
