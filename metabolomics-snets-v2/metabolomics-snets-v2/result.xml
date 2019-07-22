@@ -204,6 +204,12 @@
                         <column type="integer"        field="NumberOrganismIDs"    label="Hits"         width="1"/>
 
                         <column type="expandable"        field="UniqueFileSources"    label="All Files"         width="20"/>
+
+                        <column label="USI" type="genericurlgenerator" width="3" field="cluster index"> \
+                            <parameter name="URLBASE" value="http://dorresteinappshub.ucsd.edu:5011/spectrum/"/>\
+                            <parameter name="REQUESTPARAMETER=usi" value="mzspec:GNPSTASK-{task}:spectra/specs_ms.mgf:scan:[cluster index]"/>
+                            <parameter name="LABEL" value="USI Page"/>
+                        </column>
                 </row>
                 <row expander="image">
                   <column type="jscolumnspectrumviewer" colspan="5">
