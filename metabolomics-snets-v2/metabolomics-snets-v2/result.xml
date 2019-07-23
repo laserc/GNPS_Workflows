@@ -231,6 +231,13 @@
                         <parameter name="scan"    value="[cluster index]"/>
                     </column>
                 </row>
+
+                <!-- <row expander="Vector Image" expandericontype="text">
+                    <column label="USI" type="genericimagedisplayer" width="3" field="cluster index"> \
+                        <parameter name="URLBASE" value="http://dorresteinappshub.ucsd.edu:5011/svg/"/>\
+                        <parameter name="REQUESTPARAMETER=usi" value="mzspec:GNPSTASK-{task}:spectra/specs_ms.mgf:scan:[cluster index]"/>
+                    </column>
+                </row> -->
         </block>
 
 
